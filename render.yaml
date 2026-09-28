@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: contradiction-in-philosophy-blog
+    runtime: static
+    branch: main
+    buildCommand: mkdir -p dist && cp index.html web-blog.html dist/
+    staticPublishPath: ./dist
